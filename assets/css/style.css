@@ -17,6 +17,10 @@ body {
   color: var(--hightlight_color);
 }
 
+body > header {
+  position: relative;
+}
+
 header > aside {
   align-self: center;
 }
@@ -43,8 +47,8 @@ a {
   font-size: 90%;
 }
 
-a:hover {
-  color: white;
+section.two_col > article > nav > a {
+  padding: 5px 25px 5px 25px;
 }
 
 h1,h2,h3 {
@@ -85,6 +89,7 @@ h4 {
   font-weight: bold;
   border-top: solid 5px var(--hightlight_color);
   border-bottom: solid 5px var(--hightlight_color);
+  position: relative;
 }
 
 header > article {
@@ -95,10 +100,12 @@ header > article {
 
 aside, article {
   text-align: left;
+  padding: 0px 10px 0px 10px;
 }
 
 section {
-  padding: 30px 0 30px 0;
+  padding: 30px 0 5px 0;
+  position: static;
 }
 
 .two_col {
@@ -128,31 +135,69 @@ section.two_col > article {
 }
 
 .nest_col > article {
-  flex: 1 1 100vw;
-  background-color: green;
-  padding: 25px 25px 25px 25px;
-  margin: 10px;
+  /* flex: 1 1 100vw;
+  background-color: white;
+  margin: 0px 10px 10px 10px;
   width: 100%;
-  border: 2px solid var(--hightlight_color);
   flex-wrap: wrap;
   justify-items: center;
   align-content: flex-end;
-  min-height: 400px;
-  max-height: 500px;
+  max-width: 100%;
+  height: auto; */
+  position: relative;
+}
+
+.nested_img_L {
+  /* flex: 1 1 100vw;
+  background-color: white;
+  margin: 0 35px 0 10px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-content: flex-end; */
+  max-width: 100%;
+  height: auto;
+  border: 8px solid var(--hightlight_color);
+  margin-bottom: 10px;
 }
 
 .nest_col > aside {
-  flex: 1 1 0;
-  background-color: red;
-  padding: 25px 25px 25px 25px;
-  margin: 10px;
+  /* flex: 1 1 0; */
+  /* background-color: red; */
+  /* margin: 0 10px 10px 10px; */
   width: 50%;
-  border: 2px solid var(--hightlight_color);
-  flex-wrap: wrap;
+  /* border: 2px solid var(--hightlight_color); */
+  /* flex-wrap: wrap;
   justify-items: center;
   align-content: flex-end;
-  min-height: 200px;
-  max-height: 250px;
+  max-width: 50%;
+  height: auto; */
+  position: relative;
+}
+
+.nested_img_S {
+  /* flex: 1 1 0;
+  background-color: red;
+  margin: 0 0 0 0;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-content: flex-end; */
+  max-width: 100%;
+  height: auto;
+  border: 8px solid var(--hightlight_color);
+  margin: 10px 0 10px 0;
+}
+
+article > h3, aside > h3 {
+  position: absolute;
+  top: 50%;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: 0px 10px 0px 8px;
+  z-index: 1;
+  font-size: 170%;
 }
 
 p {
@@ -165,10 +210,31 @@ header > article {
   border-left: none;
 }
 
+a:hover {
+  color: white;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+.headshot {
+  position: absolute;
+  justify-content: center;
+  height: 28vw;
+  width: 28vw;
+  top: 120px;
+  border-radius: 50%;
+  border: 5px solid var(--hightlight_color);
+}
+
 @media screen and (max-width: 900px) {
   nav {
     justify-content: center;
     align-content: center;
+  }
+  article > h3, aside > h3 {
+    font-size: 115%;
   }
 }
 
@@ -177,9 +243,18 @@ header > article {
     text-align: center;
     width: 100%
   }
+  h2 {
+    text-decoration: underline;
+  }
+
   article {
     border-left: none;
   }
+
+  .headshot { 
+    top: 170px;
+  }
+
   body, section, header {
     flex-direction: column;
     justify-content: center;
@@ -191,7 +266,8 @@ header > article {
 
   aside, article {
     width: 100%;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 10px 0px 10px;
+    position: static;
   } 
  
   a {
@@ -205,6 +281,10 @@ header > article {
     margin: 0 0 15px 0px;
   }
 
+  section.two_col > aside {
+    padding: 5px 0 5px 0px;
+  }
+
   h2 {
     justify-content: center;
     align-items: center;
@@ -214,5 +294,12 @@ header > article {
   .Background {
     display: flex;
     max-width: 100%;
+  }
+
+  article > h3, aside > h3 {
+    font-size: 100%;
+  }
+  section.two_col > article {
+    width: 95vw;
   }
 }
