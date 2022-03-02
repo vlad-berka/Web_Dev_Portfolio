@@ -9,6 +9,7 @@
     </head>
 
     <body>
+        <!-- Top of page header: name and local webpage nav links -->
         <header class="two_col">
             <aside>
                 <h1 id="Top">Vladimir Berka</h1>
@@ -23,26 +24,33 @@
             </article>
         </header>
 
-        <img class="Background" src="./assets/images/background.jpg" alt="Background Image">
-            <h3>Board gamer... Snowboarder... Web Developer...</h3>
-        </img>
-        <img class="headshot" src="./assets/images/headshot.jpg" alt="Headshot Image"></img>
+        <!-- Background flavor image and headshot separating top of page and rest of content -->
+        <header>
+            <img class="Background" src="./assets/images/background.jpg" alt="Background Image">
+                <!-- <h3>Board gamer... Snowboarder... Web Developer...</h3> -->
+                <h3>//Insert clever and witty caption here</h3>
+            </img>
+            <img class="headshot" src="./assets/images/headshot.JPG" alt="Headshot Image"></img>
+        </header>
 
+        <!-- Starting two column layout: heading titles left and content right -->
         <section class="two_col">
             <aside>
                 <h2 id="About_Me">About Me</h2>
             </aside>
             <article>
-                <p>This is where the main text goes. This is where the main text goes</p>
-                <p>This is where the main text goes</p>
-                <p>This is where the main text goes</p>
-                <p>This is where the main text goes</p>
-                <p>This is where the main text goes</p>
-                <p>This is where the main text goes</p>
+                <p>Civil Engineer by education and Structural Engineer by profession, but aspiring web developer.</p><br>
+                <p>Slovak by birth and Texan by nurture, but Pacific North-West native by nature.</p><br>
+                <p>While waiting for the season's snow fall, I play and design tabletop board games.</p>
+                <p>And when I'm neither gaming or snowboarding; I'm out hiking, exploring, or trying different brews.</p>
+                <p>Moved up to Seattle from Houston to pursue all 5 of those things, and stayed because of the weather.</p>
+                <p>Night owl and coffee addict. Music appreciator and a really bad singer.</p>
                 <br>
             </article>
         </section>
 
+        <!-- Section with image work hyperlinks to github work completed
+        NOTE: large project requires "article" container and nested article with "nested_img_L" class -->
         <section class="two_col">
             <aside>
                 <h2 id="My_Work">Work</h2>
@@ -50,27 +58,34 @@
             <article class="nest_col">
                 <article>
                     <h3>Semantic Markup & Code Refractor</h3>
-                    <img class="nested_img_L" src="./assets/images/HW1.png" alt="Homework 1 screenshot"></img>
+                    <a href="https://github.com/vlad-berka/UW_Bootcamp_Homework" target="_blank">
+                    <img class="nested_img_L" src="./assets/images/HW1.png" alt="Homework 1 screenshot"></img></a>
                 </article>
                 <aside>
                     <h3>Placeholder Project 1</h3>
-                    <img class="nested_img_S" src="./assets/images/placeholder1.jpg" alt="Homework 2 screenshot"></img>
+                    <a href="https://github.com/vlad-berka/UW_Bootcamp_Homework" target="_blank">
+                    <img class="nested_img_S" src="./assets/images/placeholder1.jpg" alt="Homework 2 screenshot"></img></a>
                 </aside>
                 <aside>
                     <h3>Placeholder Project 2</h3>
-                    <img class="nested_img_S" src="./assets/images/placeholder2.jpg" alt="Homework 3 screenshot"></img>
+                    <a href="https://github.com/vlad-berka/UW_Bootcamp_Homework" target="_blank">
+                    <img class="nested_img_S" src="./assets/images/placeholder2.jpg" alt="Homework 3 screenshot"></img></a>
                 </aside>
                 <aside>
                     <h3>Placeholder Project 3</h3>
-                    <img class="nested_img_S" src="./assets/images/placeholder2.jpg" alt="Homework 4 screenshot"></img>
+                    <a href="https://github.com/vlad-berka/UW_Bootcamp_Homework" target="_blank">
+                    <img class="nested_img_S" src="./assets/images/placeholder2.jpg" alt="Homework 4 screenshot"></img></a>
                 </aside>
                 <aside>
                     <h3>Placeholder Project 4</h3>
-                    <img class="nested_img_S" src="./assets/images/placeholder1.jpg" alt="Homework 5 screenshot"></img>
+                    <a href="https://github.com/vlad-berka/UW_Bootcamp_Homework" target="_blank">
+                    <img class="nested_img_S" src="./assets/images/placeholder1.jpg" alt="Homework 5 screenshot"></img></a>
                 </aside>
             </article>
         </section>
 
+        <!-- Basically the footer at the bottom of the page with contact nav links
+        NOTE: CANNOT USE FOOTER CLASS WITHOUT REVISING CSS FILE as some CSS properties based on "section.two_col" selector -->
         <section class="two_col">
             <aside>
                 <h2 id="Contact_Me">Contact Me</h2>
