@@ -50,7 +50,7 @@ a:hover {
 h1,h2,h3 {
   font-size: 200%;
   margin: 0;
-  min-width: 400px;
+  /* min-width: 400px; */
   text-align: right;
   padding: 10px 10px 10px 10px;
   color: var(--hightlight_color);  
@@ -113,10 +113,10 @@ section {
 }
 
 section.two_col > article {
-  flex: 3 1 10vw;
+  flex: 4 1 10vw;
   min-width: 40vw;
   padding: 25px 15px 25px 15px;
-  border-left: 5px solid black;
+  border-left: 5px solid var(--hightlight_color);
 }
 
 .nest_col {
@@ -133,7 +133,7 @@ section.two_col > article {
   padding: 25px 25px 25px 25px;
   margin: 10px;
   width: 100%;
-  border: 2px solid black;
+  border: 2px solid var(--hightlight_color);
   flex-wrap: wrap;
   justify-items: center;
   align-content: flex-end;
@@ -147,7 +147,7 @@ section.two_col > article {
   padding: 25px 25px 25px 25px;
   margin: 10px;
   width: 50%;
-  border: 2px solid black;
+  border: 2px solid var(--hightlight_color);
   flex-wrap: wrap;
   justify-items: center;
   align-content: flex-end;
@@ -200,7 +200,7 @@ header > article {
 
   section.two_col > article {
     border-left: none;
-    border-bottom: solid 5px black;
+    border-bottom: solid 5px var(--hightlight_color);
     padding: 0 0 5px 0px;
     margin: 0 0 15px 0px;
   }
