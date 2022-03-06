@@ -6,9 +6,9 @@ This is a homework assignment for the UW Bootcamp that serves as a capstone to a
 The original user story and acceptance criteria for the assignment is copied to the end of this document.
 
 ## Assignment Scope
-Create a personal webpage to advertise and consolidate web development work. The content of the webpage is to include links to social media + github, an "about me" summary, and several image hyperlinks to completed web development work.  
+Create a personal webpage to advertise and consolidate web development work. The content of the webpage is to include links to social media + github, an "about me" summary, and several image hyperlinks to completed web development work.   
 
-NOTE: As of 3/2/22, this is still a project under development. Additional links, resources, improvements, and edits are forthcoming. 
+The design intent of the chosen layout was to replicate a mockup provided by the instructor, copied to the end of this document.
 
 ## Generalized Tasks
 - Create an accessible digital space to store and access completed web development work
@@ -20,8 +20,6 @@ NOTE: As of 3/2/22, this is still a project under development. Additional links,
 
 ## Summary of Work Completed
 The web page was organized using flexbox and nested flexbox elements. This by design allowed for a pseudo-responsive webpage that adjusted it's layout to varying viewport widths and sizes. @Media queries were added to further improve responsiveness and apperance for mobile browser settings. The overall visual layout of the webpage was divided into two columns with descriptive headers to the left and primary content to the right. A header and footer were provided for generic navigational links to either local anchors in the webpage or external hyperlinks to social media and other content. Images were provided for apperance and granted an opacity with the :hover pseudoclass to indicate external links were present. 
-
-The design intent of the chosen layout was to replicate a mockup provided by the instructor, copied to the end of this document.
 
 ## List of Files
 * README.md - This current read me file
