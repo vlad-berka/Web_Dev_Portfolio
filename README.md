@@ -59,6 +59,10 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
+## Link to the deployed Webpage
+
+[GitHub Pages URL: https://vlad-berka.github.io/Web_Dev_Portfolio/](https://vlad-berka.github.io/Web_Dev_Portfolio/)
+
 ## Screenshot of Webpage
 
 ![Vladimir Berka's Web Development Portfolio Screenshot, Mobile Web View](./assets/images/Portfolio_Screenshot.png "Portfolio Screenshot, Mobile Web View")
