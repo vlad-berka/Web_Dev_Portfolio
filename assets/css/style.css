@@ -136,7 +136,7 @@ section {
 }
 
 /* Container Flex properties for nested flex boxes, right column*/
-section.two_col > article {
+.two_col > article {
   flex: 4 1 10vw;
   min-width: 40vw;
   padding: 25px 15px 25px 15px;
